@@ -21,7 +21,7 @@ export default function App() {
 
   const renderItem = ({ item }) => (
 
-    <Button>{item.name}</Button>
+    <Button mode='contained'>{item.name}</Button>
   )
 
 
@@ -29,7 +29,6 @@ export default function App() {
     <>
       <AppBar />
       <View style={styles.container}>
-        <Text>Hello World</Text>
         <FlatList
           data={pokeData}
           renderItem={renderItem}
